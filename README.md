@@ -117,7 +117,7 @@ INSERT INTO produk (nama_produk, kategori, harga, stok) VALUES
 
 | ID Uji | Fitur / Operasi | Endpoint | Method | Skenario Pengujian | Hasil yang Diharapkan | Status | Bukti |
 |---|---|---|---|---|---|---|---|
-| TC-01 | Koneksi Pool | App startup | - | Server dijalankan pertama kali | Terhubung ke MySQL Pool tanpa error | Pass | [01-db-pool-connection.png](docs/screenshots/01-db-pool-connection.png) |
+| TC-01 | Koneksi Pool | App startup | - | Server dijalankan pertama kali | Terhubung ke MySQL Pool tanpa error | Pass | ![TC-01](docs/screenshots/01-db-pool-connection.png) |
 | TC-02 | Read (All) | `/produk` | GET | Akses halaman daftar produk | Seluruh record tabel MySQL tampil di antarmuka EJS | Pass | [02-read-select-render.png](docs/screenshots/02-read-select-render.png) |
 | TC-03 | Create | `/produk/tambah` | POST | Submit formulir produk baru | Data tersimpan di DB, DevTools mencatat 302 Redirect ke `/produk` | Pass | [03-create-insert-prg.png](docs/screenshots/03-create-insert-prg.png) |
 | TC-04 | Update | `/produk/edit/:id` | POST | Mengubah harga dan stok produk | Nilai kolom pada baris MySQL berubah sesuai input baru | Pass | [04-update-param-redirect.png](docs/screenshots/04-update-param-redirect.png) |
